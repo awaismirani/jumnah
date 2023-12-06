@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:jumnah/screens/webview_example_screen.dart';
+import 'package:jumnah/screens/welcome.dart';
 
 
 void main() async {
@@ -18,13 +20,14 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Jumnah',
+    return GetMaterialApp(
+      title: 'Brother Mobiles',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: WebviewExampleScreen(url: "https://www.jumnah.com"),
+      // home: WebviewExampleScreen(url: "https://www.brothermobiles.com/shop/"),
+      home: Welcome(),
     );
   }
 }
